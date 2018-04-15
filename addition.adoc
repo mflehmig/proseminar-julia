@@ -59,4 +59,11 @@ end
 ### parallel map
 * pmap()
 * designed for where each function call does a large amount of work
-* 
+* @parallel for can handle situations where each iteration is tiny
+** such as summing two numbers
+* pmap and @parallel for use just workers
+* final reducation is done by the calling process
+
+## Synchronization With Remote References
+
+## Scheduling
