@@ -1,0 +1,62 @@
+# Parallel Computing
+
+## Data Movement
+
+## Global Variables
+* calls may refer to global variables
+* little bit different treated under module Main
+* Variables globally created at 'workers != 1' continues to exist
+**  New global bindings are created on destination workers if they are referenced as part of a remote call
+** Global constants are declared as constants on remote nodes too
+** Globals are re-sent to a destination worker only in the context of a remote call, and then only if its value has changed. Also, the cluster does not synchronize global bindings across nodes
+* avoid referencing globals in remote calls
+** use let blovks instead
+** check with @spawnat
+
+## Parallel Map and Loops
+* parallel Computations which do not require data Movement
+* many iterations independently with reduction in the end
+** generally tensor-rank-reducing
+** @parallel instead of @spawn (no limits of processes running)
+*** @spawn as many as you wrote @spawn
+
+[source,julia]
+----
+nheads = @parallel (+) for i = 1:200000000
+    Int(rand(Bool))
+end
+----
+
+* different behavior than serial for loops
+** iterations do not happen in a specified order
+** writes to variables will not be globally visible
+** Any variables used inside the parallel loop will be copied and broadcast to each process
+*** does not work as intended
+
+[source,julia]
+----
+a = zeros(100000)
+@parallel for i = 1:100000
+    a[i] = i
+end
+----
+
+* use shared Arrays instead
+* outside variables (outer scope) perfectly reasonable if variables are read only
+
+[source,julia]
+----
+a = randn(1000)
+@parallel (+) for i = 1:100000
+    f(a[rand(1:end)])
+end
+----
+
+* reduction operator can be omitted if unnecessary
+** loop executes then asynchronously
+** or wait for completion at the end of the loop by prefixing it with @sync, like @sync @parallel for
+
+### parallel map
+* pmap()
+* designed for where each function call does a large amount of work
+* 
