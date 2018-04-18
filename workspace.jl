@@ -38,3 +38,52 @@ a[rand(1:end)]
 M = Matrix{Float64}[rand(1000,1000) for i = 1:10];
 
 pmap(svd,M);
+
+function producer(c::Channel)
+           put!(c, "start")
+           for n=1:4
+               put!(c, 2n)
+           end
+           put!(c, "stop")
+       end;
+
+taskref = Ref{Task}()
+
+@everywhere function foo(A::Array{Float64,2})
+    return A.+1
+end
+
+#=
+a = zeros(4)
+
+@ parallel for i = 1:4
+    a[i]=i
+end
+addprocs(2)
+A = rand(10,10)
+b = remotecall_fetch(()->foo(A), 2) # worker 2
+A = rand(10,10)
+c = remotecall_fetch(()->foo(A), 3) # worker 3
+A = nothing
+
+=#
+M = Matrix{Float64}[rand(800,800),rand(600,600),rand(800,800), rand(600,600)];
+@btime pmap(svd,M); #different behavior when on process calculates all big Arrays
+# Given Channels c1 and c2,
+c1 = Channel(32)
+c2 = Channel(32)
+
+# and a function `foo()` which reads items from from c1, processes the item read
+# and writes a result to c2,
+function foo2()
+    while true
+        data = take!(c1)
+        [...]               # process data
+        put!(c2, result)    # write out result
+    end
+end
+
+# we can schedule `n` instances of `foo()` to be active concurrently.
+for _ in 1:n
+    @schedule foo()
+end

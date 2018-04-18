@@ -67,3 +67,37 @@ end
 ## Synchronization With Remote References
 
 ## Scheduling
+
+* Tasks
+** computations with possibility to be suspended and resumed later on
+** possible to interrupt task by switching to other task
+** differences to function calls:
+*** no space used (does not consume call stack)
+*** no order between finishing execution
+** possibility to passing values back and forth as unnecessary without obvious caller or callee
+
+* Channels
+** waitable first in first out queue for multiple tasks writing and reading
+** Channel can be used as an iterable object
+** multiple tasks can be bound to a Channel and vice-versa
+** can be created with bound task as argument, gets automatically closed when tasks terminates
+** need to be closed before iterating
+
+
+[source,julia]
+----
+function producer(c::Channel)
+           put!(c, "start")
+           for n=1:4
+               put!(c, 2n)
+           end
+           put!(c, "stop")
+       end;
+for x in Channel(producer)
+          println(x)
+      end
+----
+@
+
+## @Code_warntype
+* good tool to identify bottlenecks
