@@ -1,0 +1,40 @@
+# Themen für parallelen Teil
+
+## Part 1: Einstieg
+
+### Generelle Erklärung (Einseitige Kommunikation, Remotereferenzen, Future, remotecall_fetch)
+
+* wie starte ich parallele Processoren (julia -p n oder addprocs(n) )
+* worker:
+* Einseitige Kommunikation (process startet nur und wartet auf Endsignal)
+* Remotereferenzen(Futures) versprechen das etwas zurückkommt was etwa so aussehen sollte
+* remotecall / remotecall_fetch
+* Macro Spawnat welches function auf spezifizierten Process auslagert
+* Macro Spawn macht alles für dich
+
+### Scope
+* wichtiger Punkt ist das Verhalten für Packages, Funktionen und globale Variablen
+* am besten hier im Schreiben dann auch kleine Codesnippets
+* @everywhere
+* große Fallstrick ist Data Movement hier, Lösung dafür kommt später
+
+### Easy-To-Use- Programmierung
+* @parallel reduktions-funktion
+* pmap designed für größere Funktionen die auf alle Elemente angewendet werden
+* @sync/ @async
+* @schedule
+* Shared Arrays
+* Distributed Arrays
+
+### Channels/Remotechannels
+
+* Kommunikationsmanagement zwischen Workern
+
+### Part 2: höhere Themen:
+
+* ClusterManager
+* Garbage Collector
+* MultiThreading
+
+### Part 3: Hilfreiche Tools
+BenchmarkTools, @Code_warntype
