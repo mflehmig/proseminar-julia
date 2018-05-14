@@ -1,0 +1,7 @@
+10-15 Seiten
+Gliederung:
+	- Einleitung (ca 1 Seite)
+	- Julia Basics Einfuehrung in die Programmiersprache Julia
+		- 1 Seite Konzept, LLVM, Vorteile&Nachteile
+		- 2 Seiten einfache Beispiele wie Loops, Variablen, Matrizenoperationen an einem Codebeispiel
+		- 1/2 Seite Typenbaum und Erklärung wie 

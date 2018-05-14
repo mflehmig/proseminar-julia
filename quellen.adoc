@@ -1,0 +1,16 @@
+### Einleitung
+
+* https://juliacomputing.com/case-studies/celeste.html
+* https://www.heise.de/developer/meldung/Programmiersprache-Julia-profiliert-sich-beim-High-Performance-Computing-3518621.html
+* https://github.com/jeff-regier/Celeste.jl --Code
+* https://www.youtube.com/watch?v=uecdcADM3hY --Video
+* https://juliacomputing.com/press/2016/11/28/celeste.html
+* https://de.wikipedia.org/wiki/Sloan_Digital_Sky_Survey / https://de.wikipedia.org/wiki/Apache-Point-Observatorium
+* http://www.astronews.com/news/artikel/2014/01/1401-013.shtml
+* http://www.sdss.org/dr14/imaging/
+* https://www.nextplatform.com/2017/11/28/julia-language-delivers-petascale-hpc-performance/
+
+* https://www.nextplatform.com/2017/11/28/julia-language-delivers-petascale-hpc-performance/
+“The Celeste project achieved a 100x increase over results previously reported in the literature”
+– Jeffrey Regier (postdoctoral fellow, UC Berkeley Department of Electrical Engineering and Computer Science
+and PI of the Celeste project)

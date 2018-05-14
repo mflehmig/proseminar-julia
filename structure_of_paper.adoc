@@ -1,0 +1,33 @@
+# Themen
+
+* Celeste Einleitung (auch schriftlich)
+
+## Julia Grundlagen
+
+* nicht jede Funktion oder sowas (kurze definition)
+* eher typisiert, eigene Funktionen, Classen?
+* struct wenn relevant
+* Paketmanager/ packages
+* Markos
+* datentypen / multiple dispatch
+* Compilierungsprozess
+* externe Bibliotheken einbinden
+* juliabox performance vergleich(mit diagramm)
+
+## parallele Programmierung in Julia
+
+* allgemein wie läuft ab
+* MPI
+* von easy peasy zu advanced
+* wo sind hürden und Fallstricke (kleinere Beispiele) (Garbage collector) immer mit dazwischen, hab achtung vor
+* sum function mit allen ausführungen
+* 3 Diagramme daraus ableiten
+* Frage beantworten ob für HPC geeignet(Argumentieren, eigene Meinung, was löst es ab)
+* Ausblick (Clustermanager, Remotechannels, Cluster cookies)
+* auch in den Ausblick Tools wie BenchmarkTools oder Code_warntype
+* derzeit noch kein Debugger(aber für <0.6)
+* Auswertung auch nur hinten dran
+* nicht so viel Code, Summenfunktion reicht aus
+
+* Treffen am 16.5.18 um 9 Uhr, am Montag Schreiben schicken
+* für Benchmark auf Taurus alles vorbereiten eine .jl
