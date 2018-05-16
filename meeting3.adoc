@@ -1,0 +1,32 @@
+# Meeting am 16.5.18
+
+## Code
+
+* deutlich schneller laufen lassen, aber parallel sollte schon gewinnen
+* Prozessoren mit in Output rein
+
+
+## paper
+
+* New Mexiko (Mexiko)
+* vor Prozent leerzeichen und 35~%
+* nicht uns
+* Performanz statt Geschwindigkeit
+* 14.5 wird zu 14,6
+* von wenigen Gruppen von Experten
+* domänenexperten statt Ninjas
+* man, ich vermeiden
+
+srun --pty --nodes 1 --ntasks 1 --cpus-per-task 24 --time=02:00:00 --mem-per-cpu=2500 -p interactive --exclusive bash
+
+scratch/zihpraktikum
+eigener ordner für mich
+mit scp
+sollte haswell node sein
+module laden
+module load git >> git pull >> code ausführen
+srun julia --dann läuft er mit 2.5GHz
+scratch hat kein backup
+
+
+* treff am 30.5. 9:00 Uhr
