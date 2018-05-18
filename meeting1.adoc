@@ -11,7 +11,7 @@
 -	Mit Konzept LLVM, multiple dispatch, und Typenbaum starten oder lieber später einschieben?
 -	Für multiple dispatch könnte man auch Machine Code kurz zeigen
 -	Multiple dispatch = Funktionen sind prinzipiell generisch und haben teilweise über 100 implementierungen (@which +)
--	@show
+-	@show/ methods(Function)
 -	Julia Compiler optimiert für bestmöglichen Typ hin und kann so einen enormen Speedup bekommen -> Typenangabe beim Programmieren sehr wichtig
 -	Speedup vorführbar bzw zahlen nennbar siehe JuliaBox.com
 
