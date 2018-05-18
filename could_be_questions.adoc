@@ -1,0 +1,5 @@
+ mehrfachmethoden die beide gleichgenau implemeniert sind, welche wird gewählt? method error ambigous -verhindern indem man solchen fall selber abdeckt
+ mehrfachvererbung im typenbaum??
+  das die ledigliche Vererbung von Verhalten unter Ausgrenzung der Struktur bestimmte Schwierigkeiten der objekt-orientierten Sprachen lösen konnte ohne große Nachteile festzustellen. wie wo was
+  openMP was ist das
+  
