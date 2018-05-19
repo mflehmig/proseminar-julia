@@ -36,3 +36,34 @@ and PI of the Celeste project)
 * https://docs.julialang.org/en/stable/manual/functions/
 * https://docs.julialang.org/en/stable/manual/types/#UnionAll-Types-1
 * https://docs.julialang.org/en/stable/manual/conversion-and-promotion/#conversion-and-promotion-1  um 18:54 Uhr
+
+### Metaprogramming
+
+* https://docs.julialang.org/en/stable/manual/metaprogramming/
+* https://en.wikipedia.org/wiki/Abstract_syntax_tree
+* https://en.wikipedia.org/wiki/String_interning
+* https://stackoverflow.com/questions/10578984/what-is-java-string-interning
+* https://stackoverflow.com/questions/23480722/what-is-a-symbol-in-julia
+* https://stackoverflow.com/questions/31733766/in-what-sense-are-languages-like-elixir-and-julia-homoiconic am 19.05.18 um 12:12 Uhr
+
+### JIT und LLVM
+* https://www.youtube.com/watch?v=7KGZ_9D_DbI&t=978s
+* https://juliacomputing.com/blog/2016/02/09/static-julia.html
+* https://www.quora.com/Is-Julia-a-scripting-language-or-native
+* https://www.heise.de/developer/artikel/Funktionsorientiert-und-schnell-Die-Programmiersprache-Julia-3793160.html?seite=all
+* https://stackoverflow.com/questions/28078089/is-julia-dynamically-typed
+* https://docs.julialang.org/en/stable/devdocs/ast/
+* https://julialang.org/blog/2016/03/parallelaccelerator
+
+### In und Outer Build Packages
+
+* https://docs.julialang.org/en/stable/manual/packages/
+* https://discourse.julialang.org/t/package-management-an-intro/4344
+* https://www.youtube.com/watch?v=-yUiLCGegJs
+* http://ucidatascienceinitiative.github.io/IntroToJulia/Html/GithubIntroduction
+Buch 1 chapter 10
+
+out:
+* https://docs.julialang.org/en/stable/manual/running-external-programs/
+* Buch Calling C and FORTRAN
+* https://docs.julialang.org/en/stable/manual/calling-c-and-fortran-code/

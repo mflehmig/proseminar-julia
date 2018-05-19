@@ -2,4 +2,5 @@
  mehrfachvererbung im typenbaum??
   das die ledigliche Vererbung von Verhalten unter Ausgrenzung der Struktur bestimmte Schwierigkeiten der objekt-orientierten Sprachen lösen konnte ohne große Nachteile festzustellen. wie wo was
   openMP was ist das
+  llvm erklären
   
