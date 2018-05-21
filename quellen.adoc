@@ -67,3 +67,11 @@ out:
 * https://docs.julialang.org/en/stable/manual/running-external-programs/
 * Buch Calling C and FORTRAN
 * https://docs.julialang.org/en/stable/manual/calling-c-and-fortran-code/
+
+### parallele programmeierung
+
+* https://docs.julialang.org/en/stable/manual/parallel-computing/
+* https://docs.julialang.org/en/stable/stdlib/parallel/#Base.Distributed.@spawn
+* http://www.alshum.com/parallel-julia/
+* http://www.csd.uwo.ca/~moreno/cs2101a_moreno/Parallel_computing_with_Julia.pdf
+* https://github.com/JuliaParallel/DistributedArrays.jl
