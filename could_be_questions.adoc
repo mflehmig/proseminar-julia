@@ -4,4 +4,4 @@
   openMP was ist das
   llvm erklären
   warum spawnat statt remotecall
-  
+  remote node???

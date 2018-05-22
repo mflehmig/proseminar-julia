@@ -35,7 +35,11 @@ and PI of the Celeste project)
 * https://discourse.julialang.org/t/workaround-for-traditional-inheritance-features-in-object-oriented-languages/1195/7
 * https://docs.julialang.org/en/stable/manual/functions/
 * https://docs.julialang.org/en/stable/manual/types/#UnionAll-Types-1
-* https://docs.julialang.org/en/stable/manual/conversion-and-promotion/#conversion-and-promotion-1  um 18:54 Uhr
+* https://docs.julialang.org/en/stable/manual/conversion-and-promotion/#conversion-and-promotion-1  um 18:54 Uhr  ** BIBFILES TILL HERE
+
+\item https://www.heise.de/developer/artikel/Funktionsorientiert\-und\-schnell\-Die\-Programmiersprache\-Julia\-3793160.html?seite=all am 14.05.18 um 14:58 Uhr
+\item https://de.wikipedia.org/wiki/Julia\_\(Programmiersprache\) am 14.05.18 um 14:58 Uhr
+
 
 ### Metaprogramming
 
@@ -75,3 +79,13 @@ out:
 * http://www.alshum.com/parallel-julia/
 * http://www.csd.uwo.ca/~moreno/cs2101a_moreno/Parallel_computing_with_Julia.pdf
 * https://github.com/JuliaParallel/DistributedArrays.jl
+
+
+advanced topics:
+* https://docs.julialang.org/en/stable/manual/parallel-computing/
+* https://github.com/JuliaParallel/MPI.jl
+* https://github.com/JuliaParallel/ClusterManagers.jl
+*
+* https://docs.julialang.org/en/stable/stdlib/simd-types/
+*https://software.intel.com/en-us/articles/vectorization-in-julia
+* https://juliaobserver.com/packages/ParallelAccelerator
