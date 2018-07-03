@@ -18,6 +18,10 @@ all: tmp
 	$(BUILDTEX)
 	mv tmp/$(PROJECT).pdf . 2> /dev/null
 
+fast: tmp
+	$(BUILDTEX)
+	mv tmp/$(PROJECT).pdf . 2> /dev/null
+
 tmp:
 	if [ ! -d "./tmp" ]; then mkdir tmp/; fi
 
